@@ -9,14 +9,47 @@
     <body>
 
         <br>
-
+        <span id="top"></span>
         <header>
             <h1>devCodeCamp HTML Worksheet</h1>
         </header>
         
         <br>
-
+        
         <main>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#s1">Section 1 - Paragraphs and Headers</a>
+                    </li>
+                    <li>
+                        <a href="#s2">Section 2 - Lists and Tables</a>
+                    </li>
+                    <li>
+                        <a href="#subA">Subsection a - Lists</a>
+                    </li>
+                    <li>
+                        <a href="#subB">Subsection b - Tables</a>
+                    </li>
+                    <li>
+                        <a href="#s3">Section 3- Attributes</a>
+                    </li>
+                    <li>
+                        <a href="#s4">Section 4- Hyperlinks and Formatting</a>
+                    </li>
+                    <li>
+                        <a href="#s5">Section 5 - Images</a>
+                    </li>
+                    <li>
+                        <a href="#s6">Section 6 - Semantic Elements</a>
+                    </li>
+                    <li>
+                        <a href="#s7">Section 7 - Inline vs Block</a>
+                    </li>
+                <ul>
+            </nav>
+
+
             <section>
                 <h2>Section Overview</h2>
 
@@ -84,7 +117,7 @@
 
             <section>
 
-                <h2>Section 1 - Paragraphs and Headers</h2>
+                <h2><span id="s1">Section 1</span> - Paragraphs and Headers</h2>
 
                 <p>
                     Most basic text you want to show up on a page should be enclosed with &lt;p&gt;&lt;/p&gt; tags, the "p" standing for "paragraph".
@@ -123,7 +156,8 @@
                 </p>
 
                 <p>Isn't that better?</p>
-
+                <br><a href="#top">Back to top</a>
+            
             </section>
 
             <br>
@@ -131,9 +165,9 @@
 
             <section>
 
-                <h2>Section 2 - Lists and Tables</h2>
+                <h2><span id="s2">Section 2</span> - Lists and Tables</h2>
 
-                <h3>Subsection a. - Lists</h3>
+                <h3><span id="subA">Subsection</span> a. - Lists</h3>
 
                 <p>Lists are a quick way to organize a sequence of items. There are two types of lists:</p>
 
@@ -177,8 +211,9 @@
                 </p>
 
                 <br>
+                <a href="#top">Back to top</a><br>
 
-                <h3>Subsection b. - Tables</h3>
+                <h3><span id="subB">Subsection</span> b. - Tables</h3>
 
                 <p>
                     Tables are very similar in structure to lists. There is an opening and closing &lt;table&gt; tag, and inside, there are &lt;tr&gt; (table row) tags to designate the different rows. However, unlike lists, which only have a single item in each row, a table is also split into columns, which allows a row to contain multiple cells of data.
@@ -230,14 +265,14 @@
                 <p>
                     Before moving on, remember to change your section headings to h2s, and subsection headings to h3s.
                 </p>
-
+            <a href="#top">Back to top</a>
             </section>
 
             <br>
             <br>
 
             <section>
-                <h2>Section 3 - Attributes</h2>
+                <h2><span id="s3">Section 3</span> - Attributes</h2>
 
                 <p>
                     Some tags require more information than just what type of tag it is. This "extra" information is supplied through <b>attributes</b>.
@@ -264,13 +299,15 @@
                         This block of text is enclosed by a &lt;div&gt; element. Divs typically don't have a visual element that can be identified in the browser, so they are often used to create "divisions" in a webpage. We will do more with divs later, but for now, give this div an attribute with the name <b>id</b> and the value <span id="target"><b>"target."</b></span> We will shortly be using this id as the target of a hyperlink.
                     </p>
                 </div>
+
+                <br><a href="#top">Back to top</a>
             </section>
 
             <br>
             <br>
 
             <section>
-                <h2>Section 4 - Hyperlinks and Formatting</h2>
+                <h2><span id="s4">Section 4</span> - Hyperlinks and Formatting</h2>
 
 
 
@@ -435,10 +472,10 @@ The URL appends the id, #Earl, to the end. -->
 
             <br>
             <br>
-
+            <a href="#top">Back to top</a>
             <section>
 
-                <h2>Section 5 - Images</h2>
+                <h2><span id="s5">Section 5</span> - Images</h2>
 
                 <p>
                     Congratulations on making it this far! This plain text website must be very boring to stare at. Let's try to make it a little more exciting by adding an image.
@@ -473,10 +510,10 @@ The URL appends the id, #Earl, to the end. -->
 
             <br>
             <br>
-
+            <a href="#top">Back to top</a>
             <section>
 
-                <h2>Section 6 - Semantic Elements</h2>
+                <h2><span id="s6">Section 6</span> - Semantic Elements</h2>
 
                 <p>
                     Up until now, we have mostly been using &lt;p&gt; tags to contain our content. The &lt;p&gt; tag is great for housing paragraph text, but as the design of our sites gets more complex, there is need for better ways to organize our content.
@@ -533,7 +570,7 @@ The URL appends the id, #Earl, to the end. -->
                 </p>
 
                 <footer>Completed by Michael Thompson</footer>
-
+            <br><a href="#top">Back to top</a>
             </section>
 
             <br>
@@ -541,7 +578,7 @@ The URL appends the id, #Earl, to the end. -->
 
             <section>
 
-                <h2>Section 7 - Inline vs Block</h2>
+                <h2><span id="s7">Section 7</span> - Inline vs Block</h2>
 
                 <p>
                     The last thing we'll look at on this project is something that you may or may not have noticed yet.
@@ -576,7 +613,16 @@ The URL appends the id, #Earl, to the end. -->
                 </p>
 
                 <p>
-                    <span>Change</span> <span>these</span> <span>&lt;span&gt;</span> <span>tags</span> <span>to</span> <span>&lt;div&gt;s</span> <span>to</span> <span>see</span> <span>the</span> <span>difference.</span>
+                    <div>Change</div>
+                    <div>these</div>
+                    <div>&lt;span&gt;</div>
+                    <div>tags</div>
+                    <div>to</div>
+                    <div>&lt;div&gt;s</div>
+                    <div>to</div>
+                    <div>see</div>
+                    <div>the</div>
+                    <div>difference.</div>
                 </p>
 
             </section>
@@ -591,6 +637,7 @@ The URL appends the id, #Earl, to the end. -->
             <p>Happy Coding!</p>
 
             <br>
+                <a href="#top">Back to top</a>
             <br>
 
         </main>
